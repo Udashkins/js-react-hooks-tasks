@@ -2,7 +2,14 @@ import React, { useState, useCallback, memo } from 'react';
 import { useTranslation } from 'react-i18next';
 
 // BEGIN (write your solution here)
-
+const Factorial = memo(({ number, getFactorial }) => {
+  const result = getFactorial(number);
+  return (
+    <div>
+      Factorial of {number} is {result}
+    </div>
+  );
+});
 // END
 
 const App = () => {
