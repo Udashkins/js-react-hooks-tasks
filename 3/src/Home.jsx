@@ -4,7 +4,8 @@ import ThemeContext from './contexts';
 
 const Home = () => {
   // BEGIN (write your solution here)
-
+  const { theme } = useContext(ThemeContext);
+  const { className } = theme;
   // END
 
   return (
